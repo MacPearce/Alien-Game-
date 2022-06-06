@@ -1,5 +1,6 @@
 import sys  
 import pygame 
+
 def check_events():
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
@@ -8,3 +9,4 @@ def check_events():
 def update_screen(ai_settings, screen, ship):
   screen.fill(ai_settings.bg_color)
   ship.blitme()
+  pygame.display.flip()
