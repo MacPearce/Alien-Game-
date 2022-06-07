@@ -14,6 +14,4 @@ def run_game():
   while True:
     gf.check_events()
     gf.update_screen(ai_settings, screen, ship)   
-    #ship.blitme()
-
 run_game()
